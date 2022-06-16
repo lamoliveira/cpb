@@ -646,12 +646,12 @@ window.addEventListener("load", mediaSizer);
             }
             console.log("devtype: "+devType )
      
-            if (devType='desktop') {
+            if (devType ==='desktop') {
                 vHeight = 1600;
                 vWidth = 1000;
             } 
             launchViz(0);
-            if (devType='desktop') {
+            if (devType === 'desktop') {
                 vHeight = 900;
                 vWidth = 1666;
             } 
@@ -667,7 +667,7 @@ window.addEventListener("load", mediaSizer);
       function launchViz(vizNav) {
         // JS object targeting a div in the html document. (vizNav) will pass navigation values to move back and forth across vizList.
         console.log("vizContainer"+vizNav)
-        console.log("devtype: "+devType )
+        console.log("devtype viz: "+devType )
             var vizDiv = document.getElementById("vizContainer"+vizNav),
             // Will embed the visualization on a div with id="VizContainer"
             options = {
